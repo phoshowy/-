@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星飘落</title>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+ 
+    <style>
+        #r1{
+     background-image: url(./封面图片/图片2.png);
+     
+        width: 220px;
+        height:210px;
+        border: #144a74 5px solid; 
+       transform: rotate(45deg);
+        
+        
+        position: relative;
+        margin-left: 17%;
+        margin-top: 10%;
+        }
+        #r1:hover {
+        background-image: url(./封面图片/t1.png);
+    }
+    #r2{
+        background-image: url(./封面图片/图片4.png);
+        width: 220px;
+        height:210px;
+        border: #144a74 5px solid;
+        transform: rotate(45deg) ;
+        
+        position: relative;
+        margin-left: 12%;
+        margin-top: 10%;
+        }
+        #r2:hover {
+            background-image: url(./封面图片/t2.png);
+    }
+    #r3{
+        background-image: url(./封面图片/图片3.png);;
+        width: 220px;
+        height:210px;
+        border: #144a74 5px solid;
+        transform: rotate(45deg) ;
+        
+        position: relative;
+        margin-left: 12%;
+        margin-top: 10%;
+        }
+        #r3:hover {
+            background-image: url(./封面图片/t3.png);
+    }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        i {
+            position: absolute;
+            top: 0;
+            transition: all 0.3s;
+            color: white;
+            size: 100px;
+        }
+ 
+        
+ 
+        section {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+ 
+<body >
+
+    <div
+    style="
+      background-image: url(./封面图片/2.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+    "
+  >
+
+    <section>
+<div style="height: 20px;"></div>
+<img src="封面图片/吉祥物1.0.png" style="position: absolute;top: 40px;left:1200px;width: 150px;">
+<img src="封面图片/吉祥物0.png" style="position: absolute;top: 240px;left:120px;width: 150px;">
+<img src="封面图片/吉祥物2.0.png" style="position: absolute;top: 720px;left:120px;width: 260px;">
+<img src="封面图片/吉祥物3.0.png" style="position: absolute;top: 700px;left:1200px;width: 240px;">
+        <div class="block">
+            <h3 class="title title-medium" style="margin-bottom:25px;
+            color:rgb(82,145,249);
+            margin-left: 32%;
+            
+            font-size:50px;
+            font-family:'PT Sans', Arial, sans-serif;
+            font-weight:bold">冰雪为媒，共赴冬奥之约</h3>
+
+            <h4 class="title title-small" style="margin-left: 35% ;
+            color:black;
+            font-size:25px;
+            font-family:'PT Sans', Arial, sans-serif">用数据展现冰雪运动 用数据弘扬冰雪文化</h4>
+
+            <p class="text" style="font-size: 18px;color: #144a74;margin-left: 20%;margin-top: 2%;font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;片片雪花汇成动人美景，一簇微火燃起希望之光。2022年北京冬奥会的成功，是中国的成功，也是世界的成功。</p>
+                <p class="text" style="font-size: 18px;color: #144a74;margin-left: 20%;margin-top: 5px;font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一届坚持如期举行的冬奥盛会，让世界看到：只要团结一心、共克时艰，就能冲破眼前阴霾，抵达光明彼岸。</p>
+                    <p class="text" style="font-size: 18px;color: #144a74;margin-left: 20%;margin-top: 5px;font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;让我们以数据绘制出一幅悠久的冰雪画卷，描绘出我们每个人的故事，传递世界人民的美好祝愿。</p>
+        
+        
+        </div>
+<div style="display: flex;">
+
+ <a id ='r1' href="../世界数据概览.html"><div ></div></a>
+     
+ <a id ='r2' href="../冬奥会历届举办详情/冬奥会历届举办详情.html"><div ></div></a>
+ <a id ='r3' href="../各届冬奥会详情/2022.html"><div ></div></a>
+
+</div>
+
+<div style="height: 300px;"></div>
+
+       
+
+    </section>
+    </div>
+</body>
+<script>
+    var sec = document.querySelector('section');
+    var bool = true;
+    function a() {
+        var i = document.createElement('i');
+        //i.className = 'fa fa-star fa-spin';
+        //不用图标可以用这个代替
+        i.innerHTML = '❄';
+        sec.appendChild(i);
+ 
+        var left = Math.floor(Math.random() * sec.offsetWidth - 400);
+        i.style.left = left + 'px';
+        // console.log(left);
+        var top = 0;
+        var slant = left;
+        function c() {
+            i.style.top = top + 'px'; top += 10;
+            i.style.left = slant + 'px'; slant += 10;
+            if (top >= sec.offsetHeight || slant >= sec.offsetWidth) {
+                // top = 0;
+                i.remove();
+            }
+        }
+        // 计时器
+        setInterval(c, 80);
+    }
+    // 计时器
+    setInterval(a, 800);
+</script>
+ 
+</html>

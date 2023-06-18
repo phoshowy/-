@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../ecahrts/echarts.min.js"></script>
+    <script src="../ecahrts/echarts-wordcloud.min.js"></script>
+    <script src="../ecahrts/echarts-liquidfill.js"></script>
+  </head>
+  <style>
+    .item9 {
+      padding-top: 0%;
+      background: linear-gradient(to left, #2cd5ff, #2cffbc) left top no-repeat,
+        linear-gradient(to bottom, #2cd5ff, #2cd5ff) left top no-repeat,
+        linear-gradient(to left, #2cd5ff, #2cd5ff) right top no-repeat,
+        linear-gradient(to bottom, #2cd5ff, #2cd5ff) right top no-repeat,
+        linear-gradient(to left, #2cd5ff, #2cd5ff) left bottom no-repeat,
+        linear-gradient(to bottom, #2cd5ff, #2cd5ff) left bottom no-repeat,
+        linear-gradient(to left, #2cd5ff, #2cd5ff) right bottom no-repeat,
+        linear-gradient(to left, #2cd5ff, #2cd5ff) right bottom no-repeat;
+      background-size: 4px 20px, 20px 4px, 4px 20px, 20px 4px;
+      /* border: 1px solid #073F97; */
+      position: relative;
+    }
+  </style>
+  <body>
+    <div
+      style="
+        background-image: url(./img/bg.png);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+      "
+    >
+      <!--中国数据-->
+      <div style="height: 80px; width: 100%">
+        <div
+          style="
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: bolder;
+            margin-left: 45%;
+            color: white;
+            margin-left: 1%;
+          "
+        >
+          <text style="text-align: center;margin-left: 45%;">中国数据</text>
+        </div>
+       
+      </div>
+      <!--中间三个-->
+      <div style="display: flex">
+        <div id="cc1" class="item9" style="height: 459px; width: 35%;margin-left:1%"></div>
+<div style="height: 460px;width: 1%;"> </div>
+        <div id="cc2" class="item9" style="height: 460px; width: 30%"></div>
+<div style="height: 460px;width: 1%;"> </div>
+        <div id="cc3" class="item9" style="height: 459px; width: 35%"></div>
+      </div>
+      <!--下面-->
+      <div style="height: 20px;width: 100%;"></div>
+      <div id="cb"style="height: 300px; width: 100%"></div>
+  
+<!-- 图文部分 -->
+<div style="height: 10px; width: 100%"></div>
+
+    <div style="height: 300px;width: 100%;">
+      <div style="display: flex;">
+          <div id='b1'style="height: 300px;width:28%;">
+            <img src="历届冬奥会图片/历届冬奥会图片/2022举办图片.png" style="height: 300px;margin-top: 5%;margin-left: 15%;">
+      
+          </div>
+          <div style="height: 300px;width:2% ;"></div>
+          <div class="item9" id='b2'style="height: 300px;width:40%;color: #fff;">
+            <div>
+              <text style="color: white;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-weight: bolder;font-size: 30px;margin-left: 35%;margin-top: 2%;text-align: center;">相关资讯</text>
+             <p style="color: wheat;font-size: 20px;">2022年中国北京冬奥会</p>
+              <ul>
+              <li>双奥之城</li>
+              <p>随着2015年7月31日获得2022年冬奥会主办权，北京已经成为第一座先后举办过夏奥会和冬奥会的双奥之城。</p>
+
+<li>七个新项目</li>
+<p>北京冬奥会新增了七个项目，分别是：女子单人雪车、自由式滑雪大台（男子、女子）、短道速滑混合团体接力、跳台滑雪混合团体、自由式滑雪空中技巧混合团体以及单板滑雪混合团体障碍追逐。
+
+
+</p>
+             </ul>
+         
+             </div>
+          
+          
+          </div>
+          <div style="height: 300px;width:2% ;"></div>
+          <div id='b3'style="height: 300px;width: 28%;">
+            <img src="历届冬奥会图片1/2022年举办图片.PNG" style="width: 95%;height: 80%;margin-top: 10%;">
+          </div>
+         
+  </div>
+
+  
+</div>
+<div style="height: 40px; width: 100%"></div>
+<div style="display: flex;height: 100px;margin-top: 50px;">
+  <a href="../冬奥会历届举办详情/冬奥会历届举办详情.html"><text style="font-family: Impact;font-weight: bolder;margin-left:260px;font-size: 30px;color: white;">冬奥会历年举办详情👈</text></a>
+<a href="../世界数据概览.html"><text style="font-family: Impact;font-weight: bolder;margin-left:360px;font-size: 30px;color: white;">👉世界数据概览</text></a>
+
+</div>
+    </div>
+    <script>
+      var cc1 = echarts.init(document.getElementById("cc1"));
+      var data = {
+        value: [
+          {
+            name: "冬奥会",
+            value: 72,
+          },
+          {
+            name: "中国",
+            value: 70,
+          },
+          {
+            name: "冰雪",
+            value: 55,
+          },
+          {
+            name: "百年",
+            value: 40,
+          },
+          {
+            name: "北京",
+            value: 38,
+          },
+          {
+            name: "运动",
+            value: 28,
+          },
+          {
+            name: "未来",
+            value: 27,
+          },
+          {
+            name: "直播",
+            value: 16,
+          },
+          {
+            name: "一起",
+            value: 20,
+          },
+          {
+            name: "元素",
+            value: 17,
+          },
+          {
+            name: "绿色",
+            value: 17,
+          },
+          {
+            name: "志愿者",
+            value: 14,
+          },
+          {
+            name: "最快",
+            value: 14,
+          },
+          {
+            name: "双奥之城",
+            value: 14,
+          },
+          {
+            name: "举办",
+            value: 13,
+          },
+          {
+            name: "冰墩墩",
+            value: 12,
+          },
+          {
+            name: "运动员",
+            value: 12,
+          },
+          {
+            name: "世界",
+            value: 12,
+          },
+          {
+            name: "三亿人",
+            value: 10,
+          },
+          {
+            name: "场馆",
+            value: 15,
+          },
+          {
+            name: "文化",
+            value: 9,
+          },
+          {
+            name: "赛区",
+            value: 9,
+          },
+          {
+            name: "2022",
+            value: 9,
+          },
+          {
+            name: "奥运",
+            value: 8,
+          },
+          {
+            name: "滑雪",
+            value: 13,
+          },
+          {
+            name: "参与",
+            value: 6,
+          },
+          {
+            name: "盛会",
+            value: 6,
+          },
+          {
+            name: "服务",
+            value: 6,
+          },
+          {
+            name: "交通",
+            value: 5,
+          },
+          {
+            name: "旅游",
+            value: 5,
+          },
+          {
+            name: "主题",
+            value: 5,
+          },
+          {
+            name: "保障",
+            value: 5,
+          },
+          {
+            name: "碳中和",
+            value: 3,
+          },
+          {
+            name: "精神",
+            value: 3,
+          },
+          {
+            name: "帮助",
+            value: 3,
+          },
+          {
+            name: "强大",
+            value: 3,
+          },
+          {
+            name: "承诺",
+            value: 2,
+          },
+          {
+            name: "支撑",
+            value: 2,
+          },
+          {
+            name: "持续",
+            value: 2,
+          },
+          {
+            name: "国际奥委会",
+            value: 20,
+          },
+
+          {
+            name: "公益",
+            value: 10,
+          },
+        ],
+        //图片 女士 男士
+        //image:
+        // 'data:image/png;base64,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',
+        //image: "data:image/png;base64,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"
+      };
+      var maskImage = new Image();
+      maskImage.src = data.image;
+
+      cc1_option = {
+        title: {
+          text: "媒体关注词云图",
+          top: "5%",
+          left: "35%",
+          textStyle: { fontSize: 22, color: "white" },
+        },
+        backgroundColor: "",
+        tooltip: {
+          show: false,
+        },
+        series: [
+          {
+            type: "wordCloud",
+            shape: "star",
+            gridSize: 5,
+            sizeRange: [12, 32],
+            rotationRange: [-45, 0, 45, 90],
+            maskImage: "",
+            textStyle: {
+              color: function () {
+                return (
+                  "rgb(" +
+                  [
+                    Math.round(Math.random() * 255),
+                    Math.round(Math.random() * 255),
+                    Math.round(Math.random() * 255),
+                  ].join(",") +
+                  ")"
+                );
+              },
+            },
+            left: "center",
+            top: "10%",
+            right: null,
+            bottom: null,
+            width: 480,
+            height: 400,
+            data: data.value,
+          },
+        ],
+      };
+
+      cc1.setOption(cc1_option);
+
+      var cc2 = echarts.init(document.getElementById("cc2"));
+      var cc2_option = {
+        title: [
+          {
+            text: "中国历年奖牌获取情况",
+            top: "5%",
+            left: "25%",
+            textStyle: { fontSize: 22, color: "white" },
+          },
+          {
+            text: "获得金牌比例",
+            top: "75%",
+            left: "12%",
+            textStyle: { fontSize: 18, color: "white" },
+          },
+          {
+            text: "获得奖牌比例",
+            top: "75%",
+            left: "63%",
+            textStyle: { fontSize: 18, color: "white" },
+          },
+          {
+            text: "注：计算公式为中国占比/世界占比",
+            top: "88%",
+            left: "30%",
+            textStyle: { fontSize: 12, color: "orange" },
+          },
+        ],
+        series: [
+          {
+            type: "liquidFill",
+            data: [0.44],
+            center: ["25%", "45%"],
+            color: [
+              {
+                type: "linear",
+                x: 0,
+                y: 0,
+                x2: 0,
+                y2: 1,
+                colorStops: [
+                  {
+                    offset: 0,
+                    color: "rgb(255,215,0)",
+                  },
+                  {
+                    offset: 1,
+                    color: "rgb(255,215,0)",
+                  },
+                ],
+                globalCoord: false,
+              },
+            ],
+            backgroundStyle: {
+              borderWidth: 1,
+              color: "#f7e8aa",
+            },
+            shape:
+              "path://M811.433134 154.006739C811.433134 104.440846 771.358148 64.383234 721.922044 64.383234L304.121868 64.383234C254.697006 64.383234 214.610778 104.508295 214.610778 154.006739L214.610778 370.837206l105.271697 98.178299C264.41683 520.763273 229.531337 594.284838 229.531337 676.126148 229.531337 832.693908 356.454196 959.616766 513.021956 959.616766s283.490619-126.922858 283.490619-283.490619c0-78.389142-31.825756-149.337421-83.248543-200.654946L811.433134 370.837206 811.433134 154.006739zM610.005589 183.747705c0-12.360559 10.020279-22.380838 22.380838-22.380838 12.360559 0 22.380838 10.020279 22.380838 22.380838l0 119.364471c0 12.360559-10.020279 22.380838-22.380838 22.380838-12.360559 0-22.380838-10.020279-22.380838-22.380838L610.005589 183.747705zM490.641118 153.906587c0-12.360559 10.020279-22.380838 22.380838-22.380838 12.360559 0 22.380838 10.020279 22.380838 22.380838l0 179.046707c0 12.360559-10.020279 22.380838-22.380838 22.380838-12.360559 0-22.380838-10.020279-22.380838-22.380838L490.641118 153.906587zM371.276647 183.747705c0-12.360559 10.020279-22.380838 22.380838-22.380838s22.380838 10.020279 22.380838 22.380838l0 119.364471c0 12.360559-10.020279 22.380838-22.380838 22.380838s-22.380838-10.020279-22.380838-22.380838L371.276647 183.747705zM630.04717 656.641533l-53.168287 51.825437 12.550643 73.180232c1.392926 8.124551-3.409246 11.592048-10.687617 7.765844L513.021956 754.861733l-65.71893 34.551313c-7.296766 3.835401-12.078499 0.339289-10.688639-7.765844l12.551665-73.180232-53.168287-51.825437c-5.902818-5.753613-4.055122-11.382547 4.082715-12.56495l73.476599-10.676375 32.859976-66.580439c3.648383-7.39283 9.571641-7.374435 13.210826 0l32.859976 66.580439 73.476599 10.676375C634.121709 645.262052 635.935681 650.901206 630.04717 656.641533z",
+          },
+          {
+            type: "liquidFill",
+            data: [0.74],
+            center: ["75%", "45%"],
+            color: [
+              {
+                type: "linear",
+                x: 0,
+                y: 0,
+                x2: 0,
+                y2: 1,
+                colorStops: [
+                  {
+                    offset: 0,
+                    color: "rgb(218,165,32)",
+                  },
+                  {
+                    offset: 1,
+                    color: "rgb(218,165,32)",
+                  },
+                ],
+                globalCoord: false,
+              },
+            ],
+            backgroundStyle: {
+              borderWidth: 1,
+              color: "#fffefa",
+            },
+            shape:
+              "path://M811.433134 154.006739C811.433134 104.440846 771.358148 64.383234 721.922044 64.383234L304.121868 64.383234C254.697006 64.383234 214.610778 104.508295 214.610778 154.006739L214.610778 370.837206l105.271697 98.178299C264.41683 520.763273 229.531337 594.284838 229.531337 676.126148 229.531337 832.693908 356.454196 959.616766 513.021956 959.616766s283.490619-126.922858 283.490619-283.490619c0-78.389142-31.825756-149.337421-83.248543-200.654946L811.433134 370.837206 811.433134 154.006739zM610.005589 183.747705c0-12.360559 10.020279-22.380838 22.380838-22.380838 12.360559 0 22.380838 10.020279 22.380838 22.380838l0 119.364471c0 12.360559-10.020279 22.380838-22.380838 22.380838-12.360559 0-22.380838-10.020279-22.380838-22.380838L610.005589 183.747705zM490.641118 153.906587c0-12.360559 10.020279-22.380838 22.380838-22.380838 12.360559 0 22.380838 10.020279 22.380838 22.380838l0 179.046707c0 12.360559-10.020279 22.380838-22.380838 22.380838-12.360559 0-22.380838-10.020279-22.380838-22.380838L490.641118 153.906587zM371.276647 183.747705c0-12.360559 10.020279-22.380838 22.380838-22.380838s22.380838 10.020279 22.380838 22.380838l0 119.364471c0 12.360559-10.020279 22.380838-22.380838 22.380838s-22.380838-10.020279-22.380838-22.380838L371.276647 183.747705zM630.04717 656.641533l-53.168287 51.825437 12.550643 73.180232c1.392926 8.124551-3.409246 11.592048-10.687617 7.765844L513.021956 754.861733l-65.71893 34.551313c-7.296766 3.835401-12.078499 0.339289-10.688639-7.765844l12.551665-73.180232-53.168287-51.825437c-5.902818-5.753613-4.055122-11.382547 4.082715-12.56495l73.476599-10.676375 32.859976-66.580439c3.648383-7.39283 9.571641-7.374435 13.210826 0l32.859976 66.580439 73.476599 10.676375C634.121709 645.262052 635.935681 650.901206 630.04717 656.641533z",
+          },
+        ],
+      };
+      cc2.setOption(cc2_option);
+
+      var cb = echarts.init(document.getElementById("cb"));
+      cb_option = {
+        title: {
+          text: "中国历年奖牌获取情况",
+          top: "5%",
+          left: "42%",
+          textStyle: { fontSize: 22, color: "white" },
+        },
+        singleAxis: {
+          type: "category",
+          bottom: "10%",
+
+          right: "10%",
+          data: [
+            "1992",
+            "1994",
+            "1998",
+            "2002",
+            "2006",
+            "2010",
+            "2014",
+            "2018",
+            "2022",
+          ],
+          axisLabel: { fontSize: 16, fontWeight: "bold" },
+          axisLine: { show: false },
+          axisTick: { show: false },
+        },
+        legend: {
+          show: true,
+          left: "43%",
+          top: "18%",
+          textStyle: { fontSize: 14, color: "white" },
+          itemWidth: 20,
+          itemHeight: 20,
+        },
+        series: [
+          {
+            type: "scatter",
+            name: "金牌",
+            coordinateSystem: "singleAxis",
+            data: [0, 0, 0, 2, 2, 9, 3, 1, 9],
+            symbolSize: function (value) {
+              return value * 6.5;
+            },
+            symbolOffset: [0, "-30%"],
+            itemStyle: { opacity: 1, color: "rgb(255,215,12)" },
+            label: {
+              show: true,
+              position: "top",
+              formatter: "{c}",
+            },
+          },
+          {
+            type: "scatter",
+            name: "银牌",
+            coordinateSystem: "singleAxis",
+            data: [3, 1, 9, 5, 5, 3, 4, 10, 4],
+            symbolSize: function (value) {
+              return value * 8;
+            },
+            symbolOffset: [0, "10%"],
+            itemStyle: { opacity: 0.8, color: "rgb(192,192,192)" },
+            label: {
+              show: true,
+              position: "inside",
+              formatter: "{c}",
+            },
+          },
+          {
+            type: "scatter",
+            name: "铜牌",
+            coordinateSystem: "singleAxis",
+            data: [0, 2, 8, 9, 6, 7, 5, 2, 2],
+            symbolSize: function (value) {
+              return value * 8;
+            },
+            symbolOffset: [0, "70%"],
+            itemStyle: { opacity: 0.8, color: "rgb(218,165,32)" },
+            label: {
+              show: true,
+              position: "bottom",
+              formatter: "{c}",
+            },
+          },
+        ],
+      };
+
+      cb.setOption(cb_option);
+
+      var cc3 = echarts.init(document.getElementById("cc3"));
+      cc3_option = {
+        title: {
+          text: "中国夺冠项目统计",
+          top: "5%",
+          left: "35%",
+          textStyle: { fontSize: 22, color: "white" },
+        },
+        tooltip: {
+          show: true,
+        },
+        legend: {
+          top: "bottom",
+          show: false,
+          fontSize:8
+        },
+        toolbox: {
+          show: false,
+          feature: {
+            mark: { show: true },
+            dataView: { show: true, readOnly: false },
+            restore: { show: true },
+            saveAsImage: { show: true },
+          },
+        },
+        series: [
+          {
+            type: "pie",
+            radius: [50, 200],
+            center: ["50%", "50%"],
+            roseType: "area",
+            itemStyle: {
+              borderRadius: 8,
+              normal: {
+                label: {
+                  show: false,
+                },
+              },
+            },
+            data: [
+              { name: "冰壶女子冰壶", value: "4" },
+              { name: "花样滑冰混双", value: "3" },
+        
+              { name: "自由式滑雪男子空中技巧", value: "4" },
+              { name: "自由式滑雪女子空中技巧", value: "7" },
+              
+              { name: "短道速滑男子1500米", value: "3" },
+              { name: "短道速滑男子5000米接力赛", value: "4" },
+              { name: "短道速滑男子500米", value: "3" },
+              { name: "短道速滑女子1000米", value: "7" },
+              { name: "短道速滑女子1500米", value: "4" },
+              { name: "短道速滑女子3000米接力赛", value: "3" },
+              { name: "短道速滑女子500米", value: "8" },
+             
+              { name: "女子速滑1000米", value: "3" },
+              { name: "女子速滑500米", value: "4" },
+            ],
+          },
+        ],
+      };
+      cc3.setOption(cc3_option);
+    </script>
+  </body>
+</html>

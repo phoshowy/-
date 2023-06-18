@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../ecahrts/echarts.min.js"></script>
+    <script src="../ecahrts/echarts-liquidfill.js"></script>
+</head><style>
+  .item9 {
+    padding-top: 0%;
+    background: linear-gradient(to left, #2cd5ff, #2cffbc) left top no-repeat,
+      linear-gradient(to bottom, #2cd5ff, #2cd5ff) left top no-repeat,
+      linear-gradient(to left, #2cd5ff, #2cd5ff) right top no-repeat,
+      linear-gradient(to bottom, #2cd5ff, #2cd5ff) right top no-repeat,
+      linear-gradient(to left, #2cd5ff, #2cd5ff) left bottom no-repeat,
+      linear-gradient(to bottom, #2cd5ff, #2cd5ff) left bottom no-repeat,
+      linear-gradient(to left, #2cd5ff, #2cd5ff) right bottom no-repeat,
+      linear-gradient(to left, #2cd5ff, #2cd5ff) right bottom no-repeat;
+    background-size: 4px 20px, 20px 4px, 4px 20px, 20px 4px;
+    /* border: 1px solid #073F97; */
+    position: relative;
+  }
+</style>
+<body>
+  <div
+      style="
+        background-image: url(./img/bg.png);
+        background-size: cover;
+        width: 100%;
+        height: 1000px;
+      "
+    >
+    <div style="height: 40px;width: 100%;"></div>
+    <div style="height: 320px;width: 100%;">
+    <div style="display: flex;">
+    <div id='u1'style="height: 320px;width: 25%;"></div>
+    <div id='u2'style="height: 320px;width: 25%;"><img src="历届冬奥会图片1/1988年举办图片.PNG" style="height: 90%;width: 100%;"></div>
+    <div id='u3'style="height: 320px;width: 25%;"><img src="历届冬奥会图片/历届冬奥会图片/1988年举办图片.png" style="margin-left: 30%;"> </div>
+    <div id='u4'style="height: 320px;width: 25%;"></div>
+    </div>
+    
+    </div>
+    
+    <div id='timeline'style="height: 120px;width: 100%; ">
+   
+      <div style="display: flex">
+        <img
+          src="./img/横线.png"
+          style="
+            left: -5%;
+            top: 46%;
+            position: absolute;
+            width: 1630px;
+            height: 50px;
+          "
+        />
+        <a href="../冬奥会历届举办详情/冬奥会历届举办详情.html">
+        <img
+          src="./img/箭头_向右两次.png"
+          style="left: 95%; top: 46%; position: absolute; height: 50px"
+        />
+        </a>
+        <div style="width: 4%; height: 20%">
+          <a href="1924.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div>
+          </a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1924</text
+          >
+        </div>
+  
+        <div style="width: 4%; height: 20%">
+          <a href="1928.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1928</text
+          >
+        </div>
+  
+        <div style="width: 4%; height: 20%">
+          <a href="1932.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1932</text
+          >
+        </div>
+  
+        <div style="width: 4%; height: 20%">
+          <a href="1936.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1936</text
+          >
+        </div>
+  
+        <div style="width: 4%; height: 20%">
+          <a href="1948.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1948</text
+          >
+        </div>
+  
+        <div style="width: 4%; height: 20%">
+          <a href="1952.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1952</text
+          >
+        </div>
+  
+        <div style="width: 4%; height: 20%">
+          <a href="1956.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1956</text
+          >
+        </div>
+  
+        <div style="width: 4%; height: 20%">
+          <a href="1960.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color:#f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1960</text
+          >
+        </div>
+  
+        <div style="width: 4%; height: 20%">
+          <a href="1964.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color:  #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1964</text
+          >
+        </div>
+  
+        <div style="width: 4%; height: 20%">
+          <a href="1968.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1968</text
+          >
+        </div>
+        <div style="width: 4%; height: 20%">
+          <a href="1972.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1972</text
+          >
+        </div>
+  
+        <div style="width: 4%; height: 20%">
+          <a href="1976.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1976</text
+          >
+        </div>
+        <div style="width: 4%; height: 20%">
+          <a href="1980.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1980</text
+          >
+        </div>
+        <div style="width: 4%; height: 20%">
+          <a href="1984.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1984</text
+          >
+        </div>
+        <div style="width: 4%; height: 20%">
+          <a href="1988.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: rgb(255,215,0);
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1988</text
+          >
+        </div>
+        <div style="width: 4%; height: 20%">
+          <a href="1992.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1992</text
+          >
+        </div>
+        <div style="width: 4%; height: 20%">
+          <a href="1994.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1994</text
+          >
+        </div>
+        <div style="width: 4%; height: 20%">
+          <a href="1998.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >1998</text
+          >
+        </div>
+        <div style="width: 4%; height: 20%">
+          <a href="2002.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >2002</text
+          >
+        </div>
+        <div style="width: 4%; height: 20%">
+          <a href="2006.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >2006</text
+          >
+        </div>
+  
+        <div style="width: 4%; height: 20%">
+          <a href="2010.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >2010</text
+          >
+        </div>
+        <div style="width: 4%; height: 20%">
+          <a href="2014.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >2014</text
+          >
+        </div>
+        <div style="width: 4%; height: 20%">
+          <a href="2018.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >2018</text
+          >
+        </div>
+        <div style="width: 4%; height: 20%">
+          <a href="2022.html">
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                left: 20px;
+                top: 30px;
+                background-color: #f2e6ce;
+                border-radius: 50px;
+                -webkit-border-radius: 100px;
+                position: relative;
+              "
+            ></div
+          ></a>
+          <text
+            style="
+              position: relative;
+              font-size: larger;
+              margin-top: 40px;
+              margin-left: 15px;
+              position: absolute;
+              color: wheat;
+            "
+            >2022</text
+          >
+        </div>
+      </div>
+    
+    
+    
+    
+    </div>
+    <div style="height: 300px;width: 100%;">
+        <div style="display: flex;">
+            <div id='b1'style="height: 300px;width:28%;">
+              <div style="border-bottom:5px wheat double; ">
+               <text style="color: white;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-weight: bolder;font-size: 30px;margin-left: 10%;margin-top: 2%;text-align: center;">加拿大获奖次数最多的项目</text>
+              
+          
+              </div>
+              <div style="display: flex;">
+                <img src="./img/数字1.png" style="margin-top: 2.5%;margin-left: 5%;">
+                <text style="color: white;font-size: 20px;margin-left: 35%;margin-top: 2.5%;text-align: center;">花样滑冰（4）</text>
+                
+              </div>
+              <div style="display: flex;">
+                <img src="./img/数字2.png" style="margin-top: 2.5%;margin-left: 5%;">
+                <text style="color: white;font-size: 20px;margin-left: 35%;margin-top: 2.5%;text-align: center;">高山滑雪（1）</text>
+                
+              </div>
+              <div style="display: flex;">
+                <img src="./img/数字3.png" style="margin-top: 2.5%;margin-left: 5%;">
+                <text style="color: white;font-size: 20px;margin-left: 35%;margin-top: 2.5%;text-align: center;">\</text>
+                
+              </div>
+              <div style="display: flex;">
+                <img src="./img/数字4.png" style="margin-top: 2.5%;margin-left: 5%;">
+                <text style="color: white;font-size: 20px;margin-left: 35%;margin-top: 2.5%;text-align: center;">\</text>
+                
+              </div>
+              <div style="display: flex;">
+                <img src="./img/数字5.png" style="margin-top: 2.5%;margin-left: 5%;">
+                <text style="color: white;font-size: 20px;margin-left: 35%;margin-top: 2.5%;text-align: center;">\</text>
+                
+              </div>
+        
+            </div>
+            <div style="height: 300px;width:2% ;"></div>
+            <div class="item9" id='b2'style="height: 300px;width:40%;color: #fff;">
+              <div>
+                <text style="color: white;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-weight: bolder;font-size: 30px;margin-left: 35%;margin-top: 2%;text-align: center;">相关资讯</text>
+               <p style="color: wheat;font-size: 20px;">1988年加拿大卡尔加里冬奥会</p>
+                <ul>
+                <li>首秀和第一次</li>
+                <p>历史上第一次，冬奥会的举办天数延长至16天。高山滑雪竞赛项目从三个增加至五个，超级大回转和高山滑雪全能赛入奥。北欧两项和跳台滑雪都加入团体项目。
+                </p>
+
+<li>手握冬奥、夏奥奖牌的选手</li>
+<p>东德运动员克里斯塔·罗滕伯格赢得1000米速滑金牌。七个月后，她在夏奥会自行车比赛中收获一枚银牌，成为历史上唯一一位，同一年中在冬奥会和夏奥会赛场都斩获奖牌的运动员。
+
+</p>
+               </ul>
+           
+               </div>
+            
+            
+            </div>
+            <div style="height: 300px;width:2% ;"></div>
+            <div id='b3'style="height: 300px;width: 28%;">
+              <div style="border-bottom:5px wheat double; ">
+                <text style="color: white;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-weight: bolder;font-size: 28px;margin-left: 10%;margin-top: 2%;text-align: center;">加拿大获奖次数最多的运动员</text>
+               
+           
+               </div>
+               <div style="display: flex;">
+                 <img src="./img/数字1.png" style="margin-top: 2.5%;margin-left: 5%;">
+                 <text style="color: white;font-size: 20px;margin-left: 25%;margin-top: 2.5%;text-align: center;">Elizabeth Manley（1银）</text>
+                 
+               </div>
+               <div style="display: flex;">
+                 <img src="./img/数字2.png" style="margin-top: 2.5%;margin-left: 5%;">
+                 <text style="color: white;font-size: 20px;margin-left: 25%;margin-top: 2.5%;text-align: center;">Brian Orser（1银）</text>
+                 
+               </div>
+               <div style="display: flex;">
+                 <img src="./img/数字3.png" style="margin-top: 2.5%;margin-left: 5%;">
+                 <text style="color: white;font-size: 20px;margin-left: 25%;margin-top: 2.5%;text-align: center;">Karen Percy（2铜）</text>
+                 
+               </div>
+               <div style="display: flex;">
+                 <img src="./img/数字4.png" style="margin-top: 2.5%;margin-left: 5%;">
+                 <text style="color: white;font-size: 20px;margin-left: 25%;margin-top: 2.5%;text-align: center;">Tracy Wilson（1铜）</text>
+                 
+               </div>
+               <div style="display: flex;">
+                 <img src="./img/数字5.png" style="margin-top: 2.5%;margin-left: 5%;">
+                 <text style="color: white;font-size: 20px;margin-left: 25%;margin-top: 2.5%;text-align: center;">Robert Mccall（1铜）</text>
+                 
+               </div>
+            </div>
+    
+    </div>
+    </div>
+</body>
+<script>
+
+var u1 = echarts.init(document.getElementById("u1"))
+const data = [
+  [
+    [1924, 17],
+    [1928, 31],
+    [1932, 53],
+    [1936, 41],
+    [1948, 47],
+    [1952, 60],
+    [1956, 52],
+    [1960,75],
+    [1964, 95],
+    [1968, 111],
+    [1972, 85],
+    [1976, 109],
+    [1980,86],
+    [1984, 91],
+    [1988, 190],
+    [1992,186],
+    [1994, 149],
+    [1998, 208],
+    [2002, 215],
+    [2006,305],
+    [2010,308],
+    [2014, 359],
+    [2018, 225],
+    [2022, 217],
+ 
+  ],
+  
+];
+
+u1_option = {
+  backgroundColor: '',
+  title: {
+          text: "加拿大历年冬奥参与人数",
+          top: "2%",
+          left: "25%",
+          textStyle: { fontSize: 20, color: "white" },
+        },
+  legend: {
+   
+    show:false,
+  },
+  grid: {
+    left: '12%',
+    top: '15%',
+    show:false,
+  },
+  xAxis: {
+    axisLabel: {//y轴文字的配置
+                textStyle: {
+                     color: "white",//Y轴内容文字颜色
+                },
+        },
+
+    min:1920,
+    max:2024,
+    splitLine: {
+      show:false,
+      lineStyle: {
+        type: 'dashed'
+      }
+    }
+  },
+  yAxis: {
+    axisLabel: {//y轴文字的配置
+                textStyle: {
+                     color: "white",//Y轴内容文字颜色
+                },
+        },
+    splitLine: {
+show:false,
+      lineStyle: {
+        type: 'dashed'
+      }
+    },
+    scale: true
+  },
+  series: [
+    {
+      name: '1990',
+      data: data[0],
+      type: 'scatter',
+      symbolSize: function (data) {
+        return Math.sqrt(data[1])/1 ;
+      },
+      emphasis: {
+        focus: 'series',
+        label: {
+          show: true,
+          formatter: function (param) {
+            return param.data[0];
+          },
+          position: 'top'
+        }
+      },
+      itemStyle: {
+        shadowBlur: 10,
+        shadowColor: 'rgba(120, 36, 50, 0.5)',
+        shadowOffsetY: 5,
+        color: function (param) {
+if (param.data[0]=='1988'){
+return 'rgb(255,215,0)';
+}
+if (param.data[0]=='2010'){
+return 'rgb(255,215,0)';
+}
+
+else 
+return '#e3b4b8'; 
+                
+              },
+      }
+    },
+    
+  ]
+};
+u1.setOption(u1_option)
+
+var u4 = echarts.init(document.getElementById("u4"));
+      var u4_option = {
+        title: [
+          {
+            text: "1988年冬奥会运动员男女比例",
+            top: "5%",
+            left: "10%",
+            textStyle: { fontSize: 22, color: "white" },
+          },
+          {
+            text: "男性比例",
+            top: "85%",
+            left: "15%",
+            textStyle: { fontSize: 18, color: "white" },
+          },
+          {
+            text: "女性比例",
+            top: "85%",
+            left: "65%",
+            textStyle: { fontSize: 18, color: "white" },
+          },
+          
+        ],
+        series: [
+          {
+            outline:{
+show:false,
+            },
+            type: "liquidFill",
+            radius:'60%',
+            data: [0.83],
+            center: ["25%", "52%"],
+            label:{
+normal:{textStyle:{
+    fontSize:22,
+    color:'white'
+}},
+            },
+            color: [
+              {
+                type: "linear",
+                x: 0,
+                y: 0,
+                x2: 0,
+                y2: 1,
+                colorStops: [
+                  {
+                    offset: 0,
+                    color: "#22a2c3",
+                  },
+                  {
+                    offset: 1,
+                    color: "#22a2c3",
+                  },
+                ],
+                globalCoord: false,
+              },
+            ],
+            backgroundStyle: {
+            
+              color: "#8fb2c9",
+            },
+            shape:
+             "path:// M512 88m-88 0a88 88 0 1 0 176 0 88 88 0 1 0-176 0Z M744.9 619.6c-21.3 5.7-43.3-6.9-49-28.3l-64.1-239c-1.2-4.5-7.9-3.6-7.9 1V1008c0 8.8-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16V640c0-8.8-7.2-16-16-16s-16 7.2-16 16v368c0 8.8-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16V353.3c0-4.7-6.7-5.6-7.9-1l-64.1 239c-5.7 21.3-27.7 34-49 28.3-21.3-5.7-34-27.6-28.3-49l69.5-260C339 240.7 402.4 192 474.8 192h74.3c72.5 0 135.9 48.7 154.6 118.7l69.5 260c5.7 21.3-6.9 43.2-28.3 48.9z",
+            
+          },
+          {
+            type: "liquidFill",
+            radius:'60%',
+            
+            outline:{
+show:false,
+            },
+            data: [0.17],
+            label:{
+normal:{textStyle:{
+    fontSize:22
+}},
+            },
+            center: ["75%", "52%"],
+            color: [
+              {
+                type: "linear",
+                x: 0,
+                y: 0,
+                x2: 0,
+                y2: 1,
+                colorStops: [
+                  {
+                    offset: 0,
+                    color: "#ee2746",
+                  },
+                  {
+                    offset: 1,
+                    color: "#ee2746",
+                  },
+                ],
+                globalCoord: false,
+              },
+            ],
+            backgroundStyle: {
+              
+              color: "#e3b4b8",
+              
+            },
+            shape:
+            "path://M512 88m-88 0a88 88 0 1 0 176 0 88 88 0 1 0-176 0Z M744.9 619.6c-21.3 5.7-43.3-7-49-28.3l-64.1-239c-1.2-4.5-7.9-3.6-7.9 1v132c0 19.4 2.9 38.6 8.7 57.1l48.8 156.8c3.2 10.3-4.5 20.8-15.3 20.8H628c-2.2 0-4 1.8-4 4v284c0 8.8-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16V724c0-2.2-1.8-4-4-4h-24c-2.2 0-4 1.8-4 4v284c0 8.8-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16V724c0-2.2-1.8-4-4-4h-38.3c-10.8 0-18.5-10.5-15.3-20.8l48.8-156.8c5.8-18.5 8.7-37.7 8.7-57.1v-132c0-4.7-6.7-5.5-7.9-1l-64.1 239c-5.7 21.3-27.7 34-49 28.3-17.9-4.8-29.7-21-29.7-38.6 0-3.4 0.4-6.9 1.4-10.4l69.5-260C339 240.7 402.4 192 474.8 192h74.3c72.4 0 135.9 48.7 154.6 118.7l69.5 260c5.7 21.3-6.9 43.2-28.3 48.9z"
+              },
+        ],
+      };
+      u4.setOption(u4_option);
+</script>
+</html>

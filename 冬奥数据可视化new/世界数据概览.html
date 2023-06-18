@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./ecahrts/echarts.js"></script>
+  </head>
+  <style>
+    .item9 {
+      padding-top: 0%;
+      background: linear-gradient(to left, #2cd5ff, #2cffbc) left top no-repeat,
+        linear-gradient(to bottom, #2cd5ff, #2cd5ff) left top no-repeat,
+        linear-gradient(to left, #2cd5ff, #2cd5ff) right top no-repeat,
+        linear-gradient(to bottom, #2cd5ff, #2cd5ff) right top no-repeat,
+        linear-gradient(to left, #2cd5ff, #2cd5ff) left bottom no-repeat,
+        linear-gradient(to bottom, #2cd5ff, #2cd5ff) left bottom no-repeat,
+        linear-gradient(to left, #2cd5ff, #2cd5ff) right bottom no-repeat,
+        linear-gradient(to left, #2cd5ff, #2cd5ff) right bottom no-repeat;
+      background-size: 4px 20px, 20px 4px, 4px 20px, 20px 4px;
+      /* border: 1px solid #073f97; */
+      position: relative;
+    }
+  </style>
+  <body>
+    <div
+      style="
+        background-image: url(./各届冬奥会详情/img/bg.png);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+      "
+    >
+      <!--世界数据-->
+      <div style="height: 80px; width: 100%">
+        <div
+          style="
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: bolder;
+            margin-left: 45%;
+            color: white;
+          "
+        >
+        
+          世界数据概览
+        </div>
+      </div>
+      <div style="height: 5px; width: 100%"></div>
+      <div style="display: flex">
+        <!--左-->
+        <div style="height: 800px; width: 25%; margin-left: 1%">
+          <div class="item9" id="wl1" style="height: 337px; width: 100%"></div>
+          <div style="height: 6px; width: 100%"></div>
+          <div class="item9" id="wl2" style="height: 337px; width: 100%"></div>
+        </div>
+        <!--中-->
+        <div id="wc" style="height: 800px; width: 55%"></div>
+        <!--右-->
+        <div style="height: 800px; width: 30%; margin-right: 1%">
+          <!--四个指标-->
+          <div class="item9" style="height: 397px; width: 100%">
+            <div style="display: flex">
+              <div style="height: 197px; width: 100%">
+                <div
+                  style="
+                    font-size: large;
+                    font-weight: bolder;
+                    font-family: 'Franklin Gothic Medium';
+                    margin-top: 5%;
+                    margin-left: 30%;
+                    color: white;
+                  "
+                >
+                  举办次数
+                </div>
+                <div
+                  style="
+                    margin-top: 2%;
+                    margin-left: 20%;
+                    font-size: 90px;
+                    font-family: Cambria;
+                    font-weight: bolder;
+                    color: #ee2746;
+                  "
+                >
+                  24
+                </div>
+              </div>
+              <div style="height: 197px; width: 100%">
+                <div
+                  style="
+                    font-size: large;
+                    font-weight: bolder;
+                    font-family: 'Franklin Gothic Medium';
+                    margin-top: 5%;
+                    margin-left: 30%;
+                    color: white;
+                  "
+                >
+                  奖牌总数
+                </div>
+                <div
+                  style="
+                    margin-top: 6%;
+                    margin-left: 6%;
+                    font-size: 80px;
+                    font-family: Cambria;
+                    font-weight: bolder;
+                    color: rgb(255, 215, 0);
+                  "
+                >
+                  3497
+                </div>
+              </div>
+            </div>
+            <div style="display: flex">
+              <div style="height: 197px; width: 100%">
+                <div
+                  style="
+                    font-size: large;
+                    font-weight: bolder;
+                    font-family: 'Franklin Gothic Medium';
+                    margin-top: 5%;
+                    margin-left: 30%;
+                    color: white;
+                  "
+                >
+                  参与国家
+                </div>
+                <div
+                  style="
+                    margin-top: 3%;
+                    margin-left: 5%;
+                    font-size: 80px;
+                    font-family: Cambria;
+                    font-weight: bolder;
+                    color: #29b7cb;
+                  "
+                >
+                  1210
+                </div>
+              </div>
+              <div style="height: 197px; width: 100%">
+                <div
+                  style="
+                    font-size: large;
+                    font-weight: bolder;
+                    font-family: 'Franklin Gothic Medium';
+                    margin-top: 5%;
+                    margin-left: 30%;
+                    color: white;
+                  "
+                >
+                  项目总数
+                </div>
+                <div
+                  style="
+                    margin-left: 12%;
+                    font-size: 90px;
+                    font-family: Cambria;
+                    font-weight: bolder;
+                    color: #45b787;
+                  "
+                >
+                  206
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="height: 6px; width: 100%"></div>
+          <!--饼图-->
+          <div class="item9" id="wr" style="height: 397px; width: 100%"></div>
+        </div>
+      </div>
+      <div style="display: flex;height: 100px;margin-top: 50px;">
+        <a href="./冬奥会历届举办详情/冬奥会历届举办详情.html"><text style="font-family: Impact;font-weight: bolder;margin-left:300px;font-size: 30px;color: white;">冬奥会历届举办详情👈</text></a>
+      <a href="./各届冬奥会详情/2022.html"><text style="font-family: Impact;font-weight: bolder;margin-left:400px;font-size: 30px;color: white;">👉国内数据概览</text></a>
+      
+      </div>
+    </div>
+
+    <script>
+      var wl1 = echarts.init(document.getElementById("wl1"));
+      const data = [
+        [
+          [1924, 258],
+          [1928, 464],
+          [1932, 252],
+          [1936, 895],
+
+          [1948, 669],
+          [1952, 821],
+          [1956, 821],
+          [1962, 1091],
+          [1968, 1131],
+          [1972, 1293],
+          [1976, 1350],
+          [1980, 1123],
+          [1984, 1072],
+          [1988, 1072],
+          [1992, 1477],
+          [1994, 1801],
+          [1998, 1737],
+          [2002, 2176],
+          [2006, 2399],
+          [2010, 2508],
+          [2014, 2863],
+          [2018, 2914],
+          [2022, 2889],
+        ],
+      ];
+      wl1_option = {
+        backgroundColor: "",
+        title: {
+          text: "历年冬奥参与人数",
+          top: "2%",
+          left: "25%",
+          textStyle: { fontSize: 20, color: "white" },
+        },
+        legend: {
+          show: false,
+        },
+        grid: {
+          left: "12%",
+          top: "12%",
+          show: false,
+        },
+        xAxis: {
+          axisLabel: {
+            //y轴文字的配置
+            textStyle: {
+              color: "white", //Y轴内容文字颜色
+            },
+          },
+
+          min: 1920,
+          max: 2024,
+          splitLine: {
+            show: false,
+            lineStyle: {
+              type: "dashed",
+            },
+          },
+        },
+        yAxis: {
+          axisLabel: {
+            //y轴文字的配置
+            textStyle: {
+              color: "white", //Y轴内容文字颜色
+            },
+          },
+          splitLine: {
+            show: false,
+            lineStyle: {
+              type: "dashed",
+            },
+          },
+          scale: true,
+        },
+        series: [
+          {
+            name: "1990",
+            data: data[0],
+            type: "scatter",
+            symbolSize: function (data) {
+              return Math.sqrt(data[1]) / 1;
+            },
+            emphasis: {
+              focus: "series",
+              label: {
+                show: true,
+                formatter: function (param) {
+                  return param.data[0];
+                },
+                position: "top",
+              },
+            },
+            itemStyle: {
+              shadowBlur: 10,
+              shadowColor: "rgba(120, 36, 50, 0.5)",
+              shadowOffsetY: 5,
+              color: function () {
+                return (
+                  "rgb(" +
+                  [
+                    Math.round(Math.random() * 255),
+                    Math.round(Math.random() * 255),
+                    Math.round(Math.random() * 255),
+                  ].join(",") +
+                  ")"
+                );
+              },
+            },
+          },
+        ],
+      };
+      wl1.setOption(wl1_option);
+
+      var wc = echarts.init(document.getElementById("wc"));
+      wc_option = {
+        title: {
+          text: "奖牌数", //主标题文本
+
+          left: "center", // 标题距离左边位置，可以使用right
+          top: "0",
+          textStyle: {
+            // 主标题样式
+            fontSize: 20,
+            color: "#fff",
+          },
+        },
+        //backgroundColor: '#0E2A43',
+        tooltip: {
+          trigger: "axis",
+          axisPointer: {
+            // Use axis to trigger tooltip
+            type: "shadow", // 'shadow' as default; can also be 'line' or 'shadow'
+          },
+        },
+        legend: {
+          textStyle: {
+            //图例文字的样式
+            color: "#fff",
+            fontSize: 16,
+          },
+
+          padding: [40, 0, 0, 0],
+        },
+        grid: {
+          left: "3%",
+          right: "4%",
+          bottom: "3%",
+          containLabel: true,
+        },
+        xAxis: {
+          type: "value",
+          axisLabel: {
+            //y轴文字的配置
+            textStyle: {
+              color: "white", //Y轴内容文字颜色
+            },
+          },
+        },
+        yAxis: {
+          type: "category",
+          axisLabel: {
+            //y轴文字的配置
+            textStyle: {
+              color: "white", //Y轴内容文字颜色
+            },
+          },
+          data: [
+            "白俄罗斯",
+            "波兰",
+            "斯洛文尼亚",
+            "英国",
+            "捷克",
+            "韩国",
+            "中国",
+            "日本",
+            "法国",
+            "意大利",
+            "荷兰",
+            "瑞士",
+            "芬兰",
+            "瑞典",
+            "加拿大",
+            "奥地利",
+            "美国",
+            "俄罗斯",
+            "挪威",
+            "德国",
+          ],
+        },
+        series: [
+          {
+            name: "金牌",
+            type: "bar",
+            stack: "total",
+            itemStyle: {
+              normal: {
+                show: true,
+                color: "rgb(255,215,0)",
+                barBorderRadius: 10,
+                borderWidth: 0,
+                borderColor: "#333",
+              },
+            },
+            label: {
+              show: true,
+            },
+            emphasis: {
+              focus: "series",
+            },
+            data: [
+              5, 8, 11, 16, 27, 16, 21, 31, 55, 56, 45, 57, 61, 60, 76, 91, 97,
+              125, 124, 118,
+            ],
+          },
+          {
+            name: "银牌",
+            type: "bar",
+            stack: "total",
+            itemStyle: {
+              normal: {
+                show: true,
+                color: "rgb(192,192,192)",
+                barBorderRadius: 10,
+                borderWidth: 0,
+                borderColor: "#333",
+              },
+            },
+            label: {
+              show: true,
+            },
+            emphasis: {
+              focus: "series",
+            },
+            data: [
+              7, 7, 8, 5, 19, 30, 26, 28, 42, 43, 49, 48, 64, 51, 72, 88, 117,
+              120, 130, 155,
+            ],
+          },
+          {
+            name: "铜牌",
+            type: "bar",
+            stack: "total",
+            itemStyle: {
+              normal: {
+                show: true,
+                color: "rgb(218,165,32)",
+                barBorderRadius: 10,
+                borderWidth: 0,
+                borderColor: "#333",
+              },
+            },
+            label: {
+              show: true,
+            },
+            emphasis: {
+              focus: "series",
+            },
+            data: [
+              8, 6, 5, 13, 12, 16, 21, 16, 41, 42, 53, 62, 44, 65, 77, 71, 113,
+              143, 141, 162,
+            ],
+          },
+        ],
+      };
+      wc.setOption(wc_option);
+
+      var wl2 = echarts.init(document.getElementById("wl2"));
+      wl2_option = {
+        backgroundColor: "",
+        title: {
+          text: "历年冬奥男女比例",
+          top: "2%",
+          left: "28%",
+          textStyle: { fontSize: 20, color: "white" },
+        },
+        tooltip: {
+          trigger: "axis",
+          axisPointer: {
+            lineStyle: {
+              color: "#57617B",
+            },
+          },
+        },
+        legend: {
+          icon: "rect",
+          itemWidth: 14,
+          itemHeight: 5,
+          itemGap: 13,
+          data: ["男性比例", "女性比例"],
+          right: "4%",
+          textStyle: {
+            fontSize: 12,
+            color: "#F1F1F3",
+          },
+        },
+        grid: {
+          left: "3%",
+          right: "4%",
+          bottom: "3%",
+          containLabel: true,
+        },
+        xAxis: [
+          {
+            type: "category",
+            boundaryGap: false,
+            axisLine: {
+              show: false,
+              lineStyle: {
+                color: "#fff",
+              },
+            },
+            data: [
+              "1924",
+              "1928",
+              "1932",
+              "1936",
+              "1948",
+              "1952",
+              "1956",
+              "1960",
+              "1964",
+              "1968",
+              "1972",
+              "1976",
+              "1980",
+              "1984",
+              "1988",
+              "1992",
+              "1994",
+              "1998",
+              "2002",
+              "2006",
+              "2010",
+              "2014",
+              "2018",
+              "2022",
+            ],
+          },
+        ],
+        yAxis: [
+          {
+            type: "value",
+            axisTick: {
+              show: false,
+            },
+            axisLine: {
+              lineStyle: {
+                color: "#fff",
+              },
+            },
+            axisLabel: {
+              margin: 10,
+              textStyle: {
+                fontSize: 14,
+              },
+            },
+            splitLine: {
+              show: false,
+              lineStyle: {
+                color: "#57617B",
+              },
+            },
+          },
+        ],
+        series: [
+          {
+            name: "男性",
+            type: "line",
+            smooth: true,
+            lineStyle: {
+              normal: {
+                width: 1,
+              },
+            },
+            areaStyle: {
+              normal: {
+                color: new echarts.graphic.LinearGradient(
+                  0,
+                  0,
+                  0,
+                  1,
+                  [
+                    {
+                      offset: 0,
+                      color: "rgb(255,215,0)",
+                    },
+                    {
+                      offset: 0.8,
+                      color: "rgba(137, 189, 27, 0)",
+                    },
+                  ],
+                  false
+                ),
+                shadowColor: "rgba(0, 0, 0, 0.1)",
+                shadowBlur: 10,
+              },
+            },
+            itemStyle: {
+              normal: {
+                color: "rgb(255,215,0)",
+              },
+            },
+            data: [
+              0.9585, 0.9393, 0.9167, 0.8802, 0.8847, 0.8429, 0.8392, 0.7835,
+              0.8172, 0.8181, 0.7956, 0.795, 0.7806, 0.7822, 0.7789, 0.729,
+              0.6997, 0.6382, 0.6308, 0.6171, 0.5929, 0.5984, 0.5901, 0.5456,
+            ],
+          },
+          {
+            name: "女性",
+            type: "line",
+            smooth: true,
+            lineStyle: {
+              normal: {
+                width: 1,
+              },
+            },
+            areaStyle: {
+              normal: {
+                color: new echarts.graphic.LinearGradient(
+                  0,
+                  0,
+                  0,
+                  1,
+                  [
+                    {
+                      offset: 0,
+                      color: "#ee3f4d",
+                    },
+                    {
+                      offset: 0.6,
+                      color: "#ec9bad",
+                    },
+                  ],
+                  false
+                ),
+                shadowColor: "rgba(0, 0, 0, 0.1)",
+                shadowBlur: 10,
+              },
+            },
+            itemStyle: {
+              normal: {
+                color: "#ee3f4d",
+              },
+            },
+            data: [
+              0.0415, 0.0607, 0.0833, 0.1198, 0.1153, 0.1571, 0.1608, 0.2165,
+              0.1828, 0.1819, 0.2044, 0.205, 0.2194, 0.2178, 0.2211, 0.271,
+              0.3003, 0.3618, 0.3692, 0.3829, 0.4071, 0.4016, 0.4099, 0.4544,
+            ],
+          },
+        ],
+      };
+      wl2.setOption(wl2_option);
+
+      var wr = echarts.init(document.getElementById("wr"));
+      var equipment = [
+        "瑞士",
+        "法国",
+        "挪威",
+        "意大利",
+        "德国",
+        "奥地利",
+        "南斯拉夫",
+        "俄罗斯",
+      ];
+      var project = ["加拿大", "美国"];
+      var Asia = ["日本", "中国", "韩国"];
+      var colorList = [
+        "#0090ff",
+        "#06d3c4",
+        "#ffbc32",
+        "#2ccc44",
+        "#ff3976",
+        "#6173d6",
+        "#914ce5",
+        "#42b1cc",
+        "#ff55ac",
+        "#0090ff",
+        "#06d3c4",
+        "#ffbc32",
+        "#2ccc44",
+        "#ff3976",
+        "#6173d6",
+        "#914ce5",
+        "#42b1cc",
+        "#ff55ac",
+        "#0090ff",
+        "#06d3c4",
+        "#ffbc32",
+        "#2ccc44",
+        "#ff3976",
+        "#6173d6",
+        "#914ce5",
+        "#42b1cc",
+        "#ff55ac",
+        "#0090ff",
+        "#06d3c4",
+        "#ffbc32",
+        "#2ccc44",
+        "#ff3976",
+        "#6173d6",
+        "#914ce5",
+        "#42b1cc",
+        "#ff55ac",
+        "#0090ff",
+        "#06d3c4",
+        "#ffbc32",
+        "#2ccc44",
+        "#ff3976",
+        "#6173d6",
+        "#914ce5",
+        "#42b1cc",
+        "#ff55ac",
+        "#0090ff",
+        "#06d3c4",
+        "#ffbc32",
+        "#2ccc44",
+        "#ff3976",
+        "#6173d6",
+        "#914ce5",
+        "#42b1cc",
+        "#ff55ac",
+        "#0090ff",
+        "#06d3c4",
+        "#ffbc32",
+        "#2ccc44",
+        "#ff3976",
+        "#6173d6",
+        "#914ce5",
+        "#42b1cc",
+        "#ff55ac",
+        "#0090ff",
+        "#06d3c4",
+        "#ffbc32",
+        "#2ccc44",
+        "#ff3976",
+        "#6173d6",
+        "#914ce5",
+        "#42b1cc",
+        "#ff55ac",
+        "#0090ff",
+        "#06d3c4",
+        "#ffbc32",
+        "#2ccc44",
+        "#ff3976",
+        "#6173d6",
+        "#914ce5",
+        "#42b1cc",
+        "#ff55ac",
+        "#0090ff",
+        "#06d3c4",
+        "#ffbc32",
+        "#2ccc44",
+        "#ff3976",
+        "#6173d6",
+        "#914ce5",
+        "#42b1cc",
+        "#ff55ac",
+        "#0090ff",
+        "#06d3c4",
+        "#ffbc32",
+        "#2ccc44",
+        "#ff3976",
+        "#6173d6",
+        "#914ce5",
+        "#42b1cc",
+        "#ff55ac",
+      ];
+      wr_option = {
+        title: {
+          text: "举办国家分布",
+          top: "2%",
+          left: "35%",
+          textStyle: { fontSize: 20, color: "white" },
+        },
+        backgroundColor: "",
+        tooltip: {
+          formatter: function (param) {
+            if (param.data.type == null) {
+              return param.data.name + ":" + param.value + "次";
+            } else {
+              return param.data.type + ":" + param.value + "次";
+            }
+          },
+        },
+
+        series: [
+          {
+            name: "整体分类",
+            type: "pie",
+            radius: [0, "30%"],
+            label: {
+              position: "inner",
+            },
+            itemStyle: {
+              normal: {
+                borderColor: "#fff",
+                borderWidth: 2,
+                color: function (params) {
+                  return colorList[params.dataIndex];
+                },
+              },
+            },
+
+            selectedMode: "single",
+            data: [
+              {
+                value: 14,
+                name: "欧洲",
+              },
+              {
+                value: 6,
+                name: "北美洲",
+              },
+              {
+                value: 4,
+                name: "亚洲",
+              },
+            ],
+          },
+          {
+            name: "招标方式",
+            type: "pie",
+            radius: ["40%", "55%"],
+
+            itemStyle: {
+              normal: {
+                color: function (params) {
+                  return colorList[params.dataIndex];
+                },
+              },
+            },
+            label: {
+              normal: {
+                formatter: function (params) {
+                  if (params.value != 0)
+                    return params.data.type + ":" + params.value + "次";
+                  else return "";
+                },
+                show: true,
+              },
+            },
+
+            data: [
+              {
+                value: 2,
+                name: "欧洲",
+                type: equipment[0],
+              },
+              {
+                value: 3,
+                name: "欧洲",
+                type: equipment[1],
+              },
+              {
+                value: 2,
+                name: "欧洲",
+                type: equipment[2],
+              },
+              {
+                value: 2,
+                name: "欧洲",
+                type: equipment[3],
+              },
+              {
+                value: 1,
+                name: "欧洲",
+                type: equipment[4],
+              },
+              {
+                value: 2,
+                name: "欧洲",
+                type: equipment[5],
+              },
+              {
+                value: 1,
+                name: "欧洲",
+                type: equipment[6],
+              },
+              {
+                value: 1,
+                name: "欧洲",
+                type: equipment[7],
+              },
+
+              {
+                value: 2,
+                name: "北美洲",
+                type: project[0],
+              },
+              {
+                value: 4,
+                name: "北美洲",
+                type: project[1],
+              },
+
+              {
+                value: 1,
+                name: "亚洲",
+                type: Asia[1],
+              },
+
+              {
+                value: 1,
+                name: "亚洲",
+                type: Asia[2],
+              },
+            ],
+          },
+        ],
+      };
+      wr.setOption(wr_option);
+    </script>
+  </body>
+</html>

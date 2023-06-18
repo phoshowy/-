@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星飘落</title>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+ 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        i {
+            position: absolute;
+            top: 0;
+            transition: all 0.3s;
+            color: white;
+            size: 100px;
+        }
+ 
+        
+ 
+        section {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+ 
+<body >
+    <div
+    style="
+      background-image: url(./封面图片/2.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+    "
+  >
+    <section>
+ <div ><img src="封面图片/百年冬奥.png" style="height: 800px;width: 800px;margin-left: 28%;margin-top: 80px;"></div>
+<img src="封面图片/吉祥物.png" style="position: absolute;top: 680px;left:1200px;width: 200px;">
+<img src="封面图片/吉祥物4.0.png" style="position: absolute;top: 180px;left:200px;width: 200px;">
+<a href="home2.html"><img src="封面图片/箭头 下.png" style="position: absolute;top: 700px;left:700px;width: 70px;"></a>
+
+
+
+
+
+    </section>
+    </div>
+</body>
+<script>
+    var sec = document.querySelector('section');
+    var bool = true;
+    function a() {
+        var i = document.createElement('i');
+        //i.className = 'fa fa-star fa-spin';
+        //不用图标可以用这个代替
+        i.innerHTML = '❄';
+        sec.appendChild(i);
+ 
+        var left = Math.floor(Math.random() * sec.offsetWidth - 400);
+        i.style.left = left + 'px';
+        // console.log(left);
+        var top = 0;
+        var slant = left;
+        function c() {
+            i.style.top = top + 'px'; top += 10;
+            i.style.left = slant + 'px'; slant += 10;
+            if (top >= sec.offsetHeight || slant >= sec.offsetWidth) {
+                // top = 0;
+                i.remove();
+            }
+        }
+        // 计时器
+        setInterval(c, 80);
+    }
+    // 计时器
+    setInterval(a, 800);
+</script>
+ 
+</html>
